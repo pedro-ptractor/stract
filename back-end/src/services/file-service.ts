@@ -1,8 +1,8 @@
 import { type MultipartFile } from '@fastify/multipart';
-import { saveUpload } from '../utils/seve-upload-utils';
-import { extractText } from '../utils/tesseract-utils';
-import { parseWithAI } from '../utils/ia-parse-utils';
-import { generatePDF } from '../utils/pdf-format-utils';
+import { saveUpload } from '../utils/seve-upload-utils.js';
+import { extractText } from '../utils/tesseract-utils.js';
+import { parseWithAI } from '../utils/ia-parse-utils.js';
+import { generatePDF } from '../utils/pdf-format-utils.js';
 
 export class FileService {
   async stractText({ file }: { file: MultipartFile }) {

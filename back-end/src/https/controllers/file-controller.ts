@@ -1,5 +1,5 @@
 import type { FastifyReply, FastifyRequest } from 'fastify';
-import { FileService } from '../../services/file-service';
+import { FileService } from '../../services/file-service.js';
 // import z from 'zod';
 
 const fileService = new FileService();

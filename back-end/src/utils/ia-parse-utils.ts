@@ -1,4 +1,4 @@
-import { model } from '../ia/model-ia';
+import { model } from '../ia/model-ia.js';
 
 export async function parseWithAI(text: string) {
   const response = await model.invoke(`

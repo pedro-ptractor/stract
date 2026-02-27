@@ -1,6 +1,6 @@
 import { ChatGroq } from '@langchain/groq';
-import { env } from '../env';
-import { ReportSchema } from '../schema/report-schema';
+import { env } from '../env/index.js';
+import { ReportSchema } from '../schema/report-schema.js';
 
 export const model = new ChatGroq({
   apiKey: env.GROQ_API_KEY,
