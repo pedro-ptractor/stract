@@ -12,8 +12,10 @@ export class FileService {
 
     const data = await parseWithAI(text);
 
-    const pdfPath = await generatePDF({ data });
+    console.log(data);
 
-    return { imagePath, text, data, pdfPath };
+    // const pdfPath = await generatePDF({ data });
+
+    return { imagePath, text, data };
   }
 }
