@@ -2,14 +2,14 @@ import { model } from '../ia/model-ia.js';
 
 export async function parseWithAI(text: string) {
   const response = await model.invoke(`
-Extraia do texto:
-- cliente
-- data
-- valorTotal (apenas número)
+    Extraia do texto:
+    - cliente
+    - data
+    - valorTotal (apenas número)
 
-Texto:
-${text}
-`);
+    Texto:
+      ${text}
+    `);
 
   return response;
 }
