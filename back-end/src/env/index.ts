@@ -2,7 +2,7 @@ import 'dotenv/config';
 import z from 'zod';
 
 const envSchema = z.object({
-  //   DATABASE_URL: z.string(),
+  DATABASE_URL: z.string(),
   HOST: z.string().default('127.0.0.1'),
   PORT: z.string().default('3333'),
   GROQ_API_KEY: z.string(),
